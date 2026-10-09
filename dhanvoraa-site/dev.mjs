@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import {execFileSync} from 'node:child_process';
+import {createPreviewServer} from './server.mjs';
+const build=()=>execFileSync(process.execPath,['build.mjs'],{stdio:'inherit'});
+build();
+const preview=createPreviewServer({development:true});
+let pending;
+const rebuild=()=>{clearTimeout(pending);pending=setTimeout(()=>{try{build();preview.reload();}catch{console.error('Build failed. Keeping the preview running; fix the source and save again.');}},150);};
+const sources=new Set(['build.mjs','styles.css','app.js','site.config.json']);
+const watchers=[fs.watch('.',(_,filename)=>{if(sources.has(String(filename)))rebuild();}),fs.watch('assets',{recursive:true},rebuild)];
+const stop=()=>{clearTimeout(pending);for(const watcher of watchers)watcher.close();preview.close();};
+process.once('SIGINT',stop);process.once('SIGTERM',stop);
+preview.server.once('error',()=>{for(const watcher of watchers)watcher.close();});
+console.log('Watching page content, styles, scripts, configuration and brand assets. Save to refresh.');

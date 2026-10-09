@@ -1,0 +1,5 @@
+Edited with the built-in image generation/editing tool from assets/wordmark.jpeg.
+Transparent-background output: wordmark-transparent.png.
+
+Final prompt:
+Use case: background-extraction. Edit target: supplied Dhanvoraa navbar logo image. Remove ONLY its off-white/cream/beige background, floor, horizon line, floor reflections and background glows, producing true PNG alpha transparency. Preserve the gold-and-silver sculptural D emblem, gold sphere, ALL the existing black metallic wordmark letters spelling EXACTLY 'DHANVORAA' (D H A N V O R A A), the triangular A letterforms, their gold details, original lighting, colors, silhouette, proportions and arrangement exactly. Do not redraw, redesign, change text, invent shapes or add anything. Background and enclosed letter counters must be completely transparent; crisp antialiased object edges with no beige matte or rectangle. This is a faithful cutout of the existing emblem and wordmark for a cream #fbf8ef navigation bar. Retain a wide approximately 3:1 canvas and the original relative size and layout, with safe transparent margins. No new shadows, no glow outside the logo, no checkerboard painted into pixels.
