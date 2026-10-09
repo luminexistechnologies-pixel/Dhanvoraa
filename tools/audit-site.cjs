@@ -1,0 +1,4 @@
+﻿const {chromium}=require('playwright');
+const AxeBuilder=require('@axe-core/playwright').default;
+(async()=>{const b=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});const context=await b.newContext({viewport:{width:390,height:844}});const p=await context.newPage();await p.goto('http://127.0.0.1:4173/');const axe=await new AxeBuilder({page:p}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();console.log(JSON.stringify(axe.violations.map(v=>({id:v.id,impact:v.impact,nodes:v.nodes.slice(0,8).map(n=>({target:n.target,summary:n.failureSummary}))})),null,2));await p.locator('[name=amount]').fill('1.5');console.log('Decimal total',await p.locator('[data-total]').innerText());await p.locator('.menu-toggle').click();await p.locator('h1').click();console.log('Menu closes outside:',await p.locator('.menu-toggle').getAttribute('aria-expanded')==='false');await b.close();})();
+

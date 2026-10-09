@@ -1,0 +1,135 @@
+
+
+Website Features
+1. Home Page
+l
+Dhanvora logo and tagline: “SAVE SMALL. BUILD REAL.”
+l
+Short, simple explanation of what Dhanvora is and how it helps customers save through digital gold/silver.
+l
+Primary CTA button: “Start Saving” / “Get Started”.
+l
+The primary CTA should connect to the Augmont-provided placeholder/integration.
+l
+Short “How It Works” section explaining the process in 3–4 simple steps.
+l
+Benefits section explaining simple, regular and accessible savings.
+l
+Gold/Silver section explaining the available savings options.
+l
+Trust and transparency section with only Augmont-approved partnership/integration wording.
+l
+FAQ section.
+l
+Contact/support section.
+l
+Footer with Dhanvora name, links and contact details.
+2. How It Works
+l
+Explain the customer journey in simple language.
+l
+Step 1: Choose the savings option.
+l
+Step 2: Enter the amount / complete the transaction through the Augmont flow.
+l
+Step 3: Track the digital holding through the provided platform.
+l
+Step 4: Use available sell/redemption/physical delivery options as supported by Augmont.
+l
+Do not recreate Augmont's operational functionality on the Dhanvora website.
+3. Start Saving / CTA Button
+l
+A clearly visible “Start Saving” button should be available on the Home Page and relevant sections.
+l
+The button should open the Augmont-provided placeholder or integration.
+l
+The exact integration method must follow Augmont's technical instructions.
+l
+If Augmont provides an iframe/embed code, use the supplied code as instructed.
+l
+If Augmont provides a URL, redirect the customer to that URL.
+l
+If Augmont provides a JavaScript/widget integration, implement the supplied integration code.
+l
+Do not hard-code assumptions about the Augmont integration until their final integration details are received.
+4. Gold / Silver Information
+l
+Simple explanation of digital gold/silver savings.
+l
+Explain that customers can start with small amounts, subject to the applicable Augmont terms.
+l
+Display only current pricing, minimum amounts, charges, taxes, redemption details and other operational
+information supplied/approved by Augmont.
+l
+Avoid making investment-return or guaranteed-profit claims.
+5. FAQ
+l
+What is Dhanvora?
+
+l
+How does digital gold/silver saving work?
+l
+How can I start?
+l
+What is the minimum amount?
+l
+How can I buy/sell/redeem?
+l
+How does physical delivery work, if available?
+l
+What charges/taxes apply?
+l
+Who provides the underlying digital gold/silver service?
+l
+For operational questions, direct users to the appropriate Dhanvora/Augmont support process.
+6. Contact / Support
+l
+Dhanvora support email/contact details.
+l
+Customer support CTA.
+l
+Clear escalation/support information for issues related to the Augmont-powered transaction flow.
+7. Legal / Footer Pages
+l
+Privacy Policy.
+l
+Terms & Conditions.
+l
+Refund/Cancellation Policy, if applicable.
+l
+Disclaimer.
+l
+Partner/integration disclosures as required by Augmont.
+l
+All legal and regulatory wording should be reviewed and approved before launch.
+8. Technical Requirements
+l
+Responsive design for mobile, tablet and desktop.
+l
+Fast-loading pages and optimised images/assets.
+l
+SEO-friendly page structure, metadata and sitemap.
+l
+SSL/HTTPS.
+l
+Basic analytics and conversion tracking for marketing campaigns.
+l
+CTA click tracking for the Augmont flow.
+l
+Easy-to-update content sections.
+l
+Secure handling of any customer data collected on the Dhanvora website.
+l
+Do not store or process sensitive transaction information unless specifically required and approved for the
+integration.
+9. Important Augmont Integration Requirement
+l
+The Dhanvora website is primarily the customer-facing brand and education layer.
+l
+Augmont will provide the operational/transactional placeholder or integration for the digital gold/silver flow.
+l
+The technical team should wait for Augmont's final integration instructions before implementing the Start Saving
+flow.
+l
+The final website should make the transition from Dhanvora to the Augmont-powered experience smooth and
+clear to the customer.

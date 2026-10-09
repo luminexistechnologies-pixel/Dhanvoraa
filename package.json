@@ -1,0 +1,10 @@
+{
+  "name": "dhanvoraa-workspace",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix dhanvoraa-site run dev",
+    "build": "npm --prefix dhanvoraa-site run build",
+    "start": "npm --prefix dhanvoraa-site run start",
+    "check": "npm --prefix dhanvoraa-site run check"
+  }
+}

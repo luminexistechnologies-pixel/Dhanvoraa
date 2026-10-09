@@ -1,0 +1,27 @@
+const fs=require('node:fs');
+const file='dhanvoraa-site/README.md';let s=fs.readFileSync(file,'utf8');
+s=s.replace('Responsive website with a live-price backend','Responsive static website');
+s=s.replace(' Restart the development server after changing backend modules.','');
+s=s.replace('The deployable website is in `dist/`, including its Cloudflare-compatible Worker entrypoint at `dist/server/index.js`. The live-price API requires this backend or the supplied Node server; opening HTML files directly does not provide live prices.','The deployable static website is in `dist/`.');
+s=s.replace('the local contribution planner and click events in `app.js`','navigation, consent and click events in `app.js`');
+s=s.replace('Price pages and calculators use the reference feed described below. Product/Offer markup is omitted because these reference prices are not Dhanvoraa or Augmont purchase offers.','Price pages explain how to review transaction quotes. The website has no calculator or live-rate integration. Product/Offer markup is omitted because this website does not display purchase offers.');
+const start=s.indexOf('## Live reference rates');const end=s.indexOf('Both header and footer',start);
+if(start<0||end<0)throw Error('Rate documentation boundaries missing');
+s=s.slice(0,start)+s.slice(end);
+s=s.replace(' Planner entries are never included in analytics events or stored.','');
+fs.writeFileSync(file,s);
+let checks=fs.readFileSync('tools/regression-live.cjs','utf8');
+const checkStart=checks.indexOf("  await page.locator('[name=amount]')");const checkEnd=checks.indexOf("  await page.goto('http://127.0.0.1:4175/');await page.addStyleTag",checkStart);
+if(checkStart<0||checkEnd<0)throw Error('Old calculator check boundaries missing');
+checks=checks.slice(0,checkStart)+checks.slice(checkEnd);
+checks=checks.replace("for(const route of routes){await page.goto('http://127.0.0.1:4175'+route);","let rateRequests=0;page.on('request',request=>{if(request.url().includes('/api/metal-prices'))rateRequests++;});\n  for(const route of routes){await page.goto('http://127.0.0.1:4175'+route);assert.equal(await page.locator('[data-planner],[data-quote-panel],[data-metal-estimate],.price-calculator').count(),0,'Calculator removed: '+route);assert.ok(!/\\bcalculator\\b|\\bplanner\\b|oropocket|goldprice\\.org/i.test(await page.locator('body').innerText()),'Retired copy removed: '+route);");
+checks=checks.replace('  assert.deepEqual(errors,[]);',`  for(const route of ['/','/goal-based-savings/','/gold-price/','/silver-price/']){for(const width of [320,390,768,1440]){await page.setViewportSize({width,height:1000});await page.goto('http://127.0.0.1:4175'+route);assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'No overflow: '+route+' '+width);}}
+  await page.setViewportSize({width:1440,height:1050});await page.goto('http://127.0.0.1:4175/');await page.screenshot({path:'tools/home-without-calculator.png',fullPage:true});
+  await page.goto('http://127.0.0.1:4175/goal-based-savings/');await page.screenshot({path:'tools/goals-without-calculator.png',fullPage:true});
+  assert.equal(rateRequests,0,'No background rate polling');
+  assert.equal((await context.request.get('http://127.0.0.1:4175/api/metal-prices')).status(),404,'Retired API removed');
+  assert.equal(await page.locator('.footer-brand img').getAttribute('src'),'/assets/wordmark-transparent.png');
+  assert.equal(await page.locator('.footer-bottom a').getAttribute('href'),'https://www.luminexistechnologies.com');
+  assert.deepEqual(errors,[]);`);
+checks=checks.replace('decimal and invalid amounts, goal/metal summaries,','calculator and API removal, no rate polling, footer branding, four responsive layouts,');
+fs.writeFileSync('tools/regression-live.cjs',checks);

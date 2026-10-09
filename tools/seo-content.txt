@@ -1,0 +1,833 @@
+﻿
+SHEET: Home
+A1: Home - Website-Ready SEO Copy
+A3: SEO SETUP
+A4: Recommended URL | B4: /
+A5: Primary keyword | B5: digital gold
+A6: Secondary keywords | B6: digital silver; gold savings; silver savings; goal based savings
+A7: Title tag | B7: Digital Gold & Silver Savings for Your Goals | Dhanvoraa
+A8: Meta description | B8: Start small and build Gold and Silver towards personal goals with flexible one-time or recurring savings.
+A9: H1 | B9: Save Small. Build Gold & Silver. Reach Your Goals.
+A10: Canonical | B10: [PLACEHOLDER: production domain]/
+A11: Open Graph image | B11: [PLACEHOLDER: 1200x630 page image URL] | C11: Replace before launch.
+A13: WEBSITE CONTENT COPY
+A14: H2 / section 1 | B14: Hero introduction
+A15: Website copy | B15: Start with an amount that works for you and build Gold or Silver gradually. Choose a one-time purchase or set up regular savings, track your holdings and work towards weddings, jewellery, education, gifting and other personal goals.
+A16: Required input / validation | B16: [PLACEHOLDER: minimum amounts]; [PLACEHOLDER: available frequencies] | C16: Replace before publishing.
+A17: H2 / section 2 | B17: How Dhanvoraa works
+A18: Website copy | B18: Choose Gold or Silver. Enter the amount you want to save and select a one-time or recurring option. Review the applicable price, taxes and charges before confirming. Your purchased quantity is added to your holdings, where you can track progress and use the selling or redemption options available under provider terms.
+A19: Required input / validation | B19: [PLACEHOLDER: verified purchase flow]; [PLACEHOLDER: available redemption routes] | C19: Replace before publishing.
+A20: H2 / section 3 | B20: Choose Gold or Silver
+A21: Website copy | B21: Build Gold gradually for goals such as weddings, jewellery and future needs, or build Silver for gifting and personal ownership. You can view product details, applicable prices, charges and available redemption options before you begin.
+A22: Required input / validation | B22: [PLACEHOLDER: approved Gold and Silver use cases] | C22: Replace before publishing.
+A23: H2 / section 4 | B23: Save around your goals
+A24: Website copy | B24: Create a goal, choose Gold or Silver and decide how much and how often you want to save. Dhanvoraa helps you track the quantity accumulated and its current value. Metal prices can change, so goal progress does not guarantee a future value.
+A25: Required input / validation | B25: [PLACEHOLDER: goal fields and progress logic] | C25: Replace before publishing.
+A26: H2 / section 5 | B26: Trust and transparency
+A27: Website copy | B27: Your page should clearly identify the Gold or Silver provider, purity, storage or custody arrangement, pricing source, applicable taxes and charges, and the conditions for selling or redemption.
+A28: Required input / validation | B28: [PLACEHOLDER: provider, purity, custody, insurance and audit details] | C28: Replace before publishing.
+A30: FAQ COPY FOR WEBSITE
+A31: FAQ 1 question | B31: What is Dhanvoraa?
+A32: FAQ 1 answer | B32: Dhanvoraa is a Gold and Silver savings platform designed to help users start with small amounts, save once or regularly, track their holdings and build towards personal goals. | C32: Visible answer must match any FAQ markup.
+A33: FAQ 2 question | B33: How much can I start with?
+A34: FAQ 2 answer | B34: You can start Gold savings from [PLACEHOLDER: minimum Gold amount] and Silver savings from [PLACEHOLDER: minimum Silver amount]. | C34: Visible answer must match any FAQ markup.
+A35: FAQ 3 question | B35: Can I save daily, weekly or monthly?
+A36: FAQ 3 answer | B36: Dhanvoraa supports [PLACEHOLDER: available frequencies]. The available payment, pause and cancellation options are shown before you set up a recurring instruction. | C36: Visible answer must match any FAQ markup.
+A37: FAQ 4 question | B37: Can I sell or redeem my holdings?
+A38: FAQ 4 answer | B38: You can use the selling and redemption options supported by [PLACEHOLDER: provider]. Available routes, minimum quantities, charges, timelines and serviceable locations are subject to applicable terms. | C38: Visible answer must match any FAQ markup.
+A40: SCHEMA COPY
+A41: Recommended schema | B41: Organization + WebSite + WebPage
+A42: JSON-LD code | B42: {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "[PLACEHOLDER: production domain]/#organization",
+      "name": "Dhanvoraa",
+      "legalName": "[PLACEHOLDER: legal entity]",
+      "url": "[PLACEHOLDER: production domain]/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "[PLACEHOLDER: logo URL]"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "[PLACEHOLDER: support email]",
+        "telephone": "[PLACEHOLDER: phone]",
+        "areaServed": "IN"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "[PLACEHOLDER: production domain]/#website",
+      "url": "[PLACEHOLDER: production domain]/",
+      "name": "Dhanvoraa",
+      "publisher": {
+        "@id": "[PLACEHOLDER: production domain]/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "[PLACEHOLDER: production domain]/#webpage",
+      "url": "[PLACEHOLDER: production domain]/",
+      "name": "Digital Gold & Silver Savings for Your Goals | Dhanvoraa",
+      "description": "Start small and build Gold and Silver towards personal goals with flexible one-time or recurring savings.",
+      "isPartOf": {
+        "@id": "[PLACEHOLDER: production domain]/#website"
+      }
+    }
+  ]
+} | C42: Replace every placeholder and ensure properties match visible content.
+A43: FAQ schema guidance | B43: FAQ questions and answers must be visible on the page and identical to the marked-up copy. Treat FAQPage as semantic markup, not a guaranteed rich-result feature.
+A45: IMPLEMENTATION NOTES
+A46: Internal links | B46: Link contextually to the relevant Gold, Silver, Buy, Goals, Learn, pricing, charges and terms pages.
+A47: Rendered HTML | B47: Ensure metadata, H1, copy, links, canonical and JSON-LD are present in rendered HTML.
+A48: Source | B48: Google structured data guidelines: https://developers.google.com/search/docs/appearance/structured-data/sd-policies
+
+SHEET: About Us
+A1: About Us - Website-Ready SEO Copy
+A3: SEO SETUP
+A4: Recommended URL | B4: /about-us/
+A5: Primary keyword | B5: about Dhanvoraa
+A6: Secondary keywords | B6: Gold and Silver savings platform; small savings
+A7: Title tag | B7: About Dhanvoraa | Small Gold & Silver Savings
+A8: Meta description | B8: Learn how Dhanvoraa helps people save small amounts regularly and build Gold or Silver towards meaningful goals.
+A9: H1 | B9: Making Gold & Silver Ownership More Accessible
+A10: Canonical | B10: [PLACEHOLDER: production domain]/about-us/
+A11: Open Graph image | B11: [PLACEHOLDER: 1200x630 page image URL] | C11: Replace before launch.
+A13: WEBSITE CONTENT COPY
+A14: H2 / section 1 | B14: Why Dhanvoraa exists
+A15: Website copy | B15: Many people want to own Gold or Silver but may not want to make a large purchase at one time. Dhanvoraa is designed to make gradual accumulation easier by combining small amounts, flexible saving frequencies, clear tracking and personal goals.
+A16: Required input / validation | B16: [PLACEHOLDER: approved founding story and mission] | C16: Replace before publishing.
+A17: H2 / section 2 | B17: What problem we solve
+A18: Website copy | B18: Dhanvoraa helps users move from an intention to save into a trackable Gold or Silver journey. Users can choose a metal, save once or regularly and monitor the quantity accumulated towards a meaningful real-life goal.
+A19: Required input / validation | B19: [PLACEHOLDER: approved target-customer statement] | C19: Replace before publishing.
+A20: H2 / section 3 | B20: How the platform operates
+A21: Website copy | B21: Dhanvoraa is operated by [PLACEHOLDER: legal entity]. Gold and Silver are supplied by [PLACEHOLDER: provider], stored or held through [PLACEHOLDER: custodian/storage arrangement], and fulfilled or redeemed through [PLACEHOLDER: fulfilment or jewellery partners]. Each party’s responsibility should be stated clearly.
+A22: Required input / validation | B22: [PLACEHOLDER: validated entity and partner information] | C22: Replace before publishing.
+A23: H2 / section 4 | B23: Transparency and support
+A24: Website copy | B24: Users should be able to find the applicable purity, pricing method, taxes, charges, selling and redemption conditions, provider terms, privacy notice, complaint process and escalation contacts before purchasing.
+A25: Required input / validation | B25: [PLACEHOLDER: support and grievance details] | C25: Replace before publishing.
+A27: FAQ COPY FOR WEBSITE
+A28: FAQ 1 question | B28: Who operates Dhanvoraa?
+A29: FAQ 1 answer | B29: Dhanvoraa is operated by [PLACEHOLDER: legal entity name, registered address and registration details]. | C29: Visible answer must match any FAQ markup.
+A30: FAQ 2 question | B30: Who supplies and stores the Gold and Silver?
+A31: FAQ 2 answer | B31: Gold and Silver are supplied by [PLACEHOLDER: provider] and stored or held under [PLACEHOLDER: verified custody arrangement]. | C31: Visible answer must match any FAQ markup.
+A32: FAQ 3 question | B32: How can I contact Dhanvoraa?
+A33: FAQ 3 answer | B33: You can contact Dhanvoraa at [PLACEHOLDER: support email], [PLACEHOLDER: phone number] or through [PLACEHOLDER: support page URL]. | C33: Visible answer must match any FAQ markup.
+A35: SCHEMA COPY
+A36: Recommended schema | B36: AboutPage + BreadcrumbList
+A37: JSON-LD code | B37: {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "@id": "[PLACEHOLDER: production domain]/about-us/#webpage",
+      "url": "[PLACEHOLDER: production domain]/about-us/",
+      "name": "About Dhanvoraa | Small Gold & Silver Savings",
+      "description": "Learn how Dhanvoraa helps people save small amounts regularly and build Gold or Silver towards meaningful goals.",
+      "isPartOf": {
+        "@id": "[PLACEHOLDER: production domain]/#website"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "[PLACEHOLDER: production domain]/about-us/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "[PLACEHOLDER: production domain]/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About Us",
+          "item": "[PLACEHOLDER: production domain]/about-us/"
+        }
+      ]
+    }
+  ]
+} | C37: Replace every placeholder and ensure properties match visible content.
+A38: FAQ schema guidance | B38: FAQ questions and answers must be visible on the page and identical to the marked-up copy. Treat FAQPage as semantic markup, not a guaranteed rich-result feature.
+A40: IMPLEMENTATION NOTES
+A41: Internal links | B41: Link contextually to the relevant Gold, Silver, Buy, Goals, Learn, pricing, charges and terms pages.
+A42: Rendered HTML | B42: Ensure metadata, H1, copy, links, canonical and JSON-LD are present in rendered HTML.
+A43: Source | B43: Google structured data guidelines: https://developers.google.com/search/docs/appearance/structured-data/sd-policies
+
+SHEET: Gold
+A1: Gold - Website-Ready SEO Copy
+A3: SEO SETUP
+A4: Recommended URL | B4: /gold/
+A5: Primary keyword | B5: digital gold
+A6: Secondary keywords | B6: gold savings; gold SIP; daily gold savings; gold savings plan
+A7: Title tag | B7: Digital Gold Savings | Daily & Recurring Gold | Dhanvoraa
+A8: Meta description | B8: Build Gold gradually with small one-time or recurring savings and track progress towards personal goals.
+A9: H1 | B9: Build Gold with Small, Regular Savings
+A10: Canonical | B10: [PLACEHOLDER: production domain]/gold/
+A11: Open Graph image | B11: [PLACEHOLDER: 1200x630 page image URL] | C11: Replace before launch.
+A13: WEBSITE CONTENT COPY
+A14: H2 / section 1 | B14: What is Digital Gold?
+A15: Website copy | B15: Digital Gold allows you to purchase Gold online by value or quantity. The corresponding Gold is [PLACEHOLDER: ownership and custody wording] through [PLACEHOLDER: provider]. Your holdings are shown in your account and can be sold or redeemed through the options available under provider terms.
+A16: Required input / validation | B16: [PLACEHOLDER: provider model, purity and ownership wording] | C16: Replace before publishing.
+A17: H2 / section 2 | B17: How Gold savings work
+A18: Website copy | B18: Choose an amount, review the current Gold price and applicable taxes or charges, and confirm your purchase. The final Gold quantity is calculated using the price displayed at confirmation and is added to your holdings after successful payment.
+A19: Required input / validation | B19: [PLACEHOLDER: settlement timing and failed-payment handling] | C19: Replace before publishing.
+A20: H2 / section 3 | B20: One-time or recurring Gold savings
+A21: Website copy | B21: Make a one-time Gold purchase or set up [PLACEHOLDER: daily/weekly/monthly] recurring purchases. Explain the payment method, debit timing, price applied to each purchase, failed-payment retries, and how users can pause or cancel the instruction.
+A22: Required input / validation | B22: [PLACEHOLDER: minimum amount, frequencies and cancellation rules] | C22: Replace before publishing.
+A23: H2 / section 4 | B23: Gold pricing and charges
+A24: Website copy | B24: Before confirmation, display the Gold buy price, timestamp, amount entered, applicable GST, provider or platform charge, final quantity and any relevant buy-sell price difference.
+A25: Required input / validation | B25: [PLACEHOLDER: price source, validity window, GST, fees and spread] | C25: Replace before publishing.
+A26: H2 / section 5 | B26: Sell and redeem Gold
+A27: Website copy | B27: Depending on the options supported, users may sell Gold for cash, request physical delivery or redeem through a jewellery partner. State minimum quantity, delivery or making charges, processing time, serviceable locations and partner conditions for each route.
+A28: Required input / validation | B28: [PLACEHOLDER: supported routes and exact conditions] | C28: Replace before publishing.
+A30: FAQ COPY FOR WEBSITE
+A31: FAQ 1 question | B31: Is Digital Gold real Gold?
+A32: FAQ 1 answer | B32: Digital Gold purchased through Dhanvoraa represents [PLACEHOLDER: legally approved ownership description] provided by [PLACEHOLDER: provider] and held under [PLACEHOLDER: custody arrangement]. | C32: Visible answer must match any FAQ markup.
+A33: FAQ 2 question | B33: Where is my Gold stored?
+A34: FAQ 2 answer | B34: Your Gold is stored or held through [PLACEHOLDER: custodian/storage provider] under [PLACEHOLDER: insurance and audit arrangement, if applicable]. | C34: Visible answer must match any FAQ markup.
+A35: FAQ 3 question | B35: Is recurring Gold saving the same as a mutual-fund SIP?
+A36: FAQ 3 answer | B36: No. A recurring Gold purchase is an instruction to buy Gold at selected intervals. It is not a mutual-fund SIP. Each purchase is completed at the applicable Gold price and is subject to provider terms, taxes and charges. | C36: Visible answer must match any FAQ markup.
+A37: FAQ 4 question | B37: How is the Gold quantity calculated?
+A38: FAQ 4 answer | B38: Your quantity is calculated using the Gold buy price displayed at confirmation after applying [PLACEHOLDER: GST and charges treatment]. | C38: Visible answer must match any FAQ markup.
+A39: FAQ 5 question | B39: Can I sell or redeem my Gold?
+A40: FAQ 5 answer | B40: You can use [PLACEHOLDER: cash sale, physical delivery or jewellery redemption options]. Minimum quantities, charges and timelines vary by route. | C40: Visible answer must match any FAQ markup.
+A42: SCHEMA COPY
+A43: Recommended schema | B43: WebPage + BreadcrumbList; Product/Offer only with accurate visible data
+A44: JSON-LD code | B44: {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "[PLACEHOLDER: production domain]/gold/#webpage",
+      "url": "[PLACEHOLDER: production domain]/gold/",
+      "name": "Digital Gold Savings | Daily & Recurring Gold | Dhanvoraa",
+      "description": "Build Gold gradually with small one-time or recurring savings and track progress towards personal goals.",
+      "isPartOf": {
+        "@id": "[PLACEHOLDER: production domain]/#website"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "[PLACEHOLDER: production domain]/gold/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "[PLACEHOLDER: production domain]/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Gold",
+          "item": "[PLACEHOLDER: production domain]/gold/"
+        }
+      ]
+    }
+  ]
+} | C44: Replace every placeholder and ensure properties match visible content.
+A45: Conditional Product / Offer JSON-LD | B45: {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": "[PLACEHOLDER: production domain]/gold/#product",
+  "name": "[PLACEHOLDER: Digital Gold or Digital Silver product name]",
+  "description": "[PLACEHOLDER: visible product description]",
+  "image": [
+    "[PLACEHOLDER: product image URL]"
+  ],
+  "brand": {
+    "@type": "Brand",
+    "name": "Dhanvoraa"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "[PLACEHOLDER: production domain]/gold/",
+    "priceCurrency": "INR",
+    "price": "[PLACEHOLDER: current visible price]",
+    "availability": "https://schema.org/[PLACEHOLDER: InStock or OutOfStock]",
+    "priceValidUntil": "[PLACEHOLDER: YYYY-MM-DD if applicable]"
+  }
+} | C45: Use only when price and availability are visible, accurate and current.
+A46: FAQ schema guidance | B46: FAQ questions and answers must be visible on the page and identical to the marked-up copy. Treat FAQPage as semantic markup, not a guaranteed rich-result feature.
+A48: IMPLEMENTATION NOTES
+A49: Internal links | B49: Link contextually to the relevant Gold, Silver, Buy, Goals, Learn, pricing, charges and terms pages.
+A50: Rendered HTML | B50: Ensure metadata, H1, copy, links, canonical and JSON-LD are present in rendered HTML.
+A51: Source | B51: Google structured data guidelines: https://developers.google.com/search/docs/appearance/structured-data/sd-policies
+
+SHEET: Silver
+A1: Silver - Website-Ready SEO Copy
+A3: SEO SETUP
+A4: Recommended URL | B4: /silver/
+A5: Primary keyword | B5: digital silver
+A6: Secondary keywords | B6: buy digital silver; silver SIP; silver savings
+A7: Title tag | B7: Digital Silver Savings Online | Dhanvoraa
+A8: Meta description | B8: Start digital Silver savings with flexible amounts, track holdings and build towards gifting or ownership goals.
+A9: H1 | B9: Start Building Silver, One Small Saving at a Time
+A10: Canonical | B10: [PLACEHOLDER: production domain]/silver/
+A11: Open Graph image | B11: [PLACEHOLDER: 1200x630 page image URL] | C11: Replace before launch.
+A13: WEBSITE CONTENT COPY
+A14: H2 / section 1 | B14: What is Digital Silver?
+A15: Website copy | B15: Digital Silver allows you to purchase Silver online by value or quantity. The corresponding Silver is [PLACEHOLDER: ownership wording] through [PLACEHOLDER: provider] and can be tracked through your Dhanvoraa account.
+A16: Required input / validation | B16: [PLACEHOLDER: provider, purity, ownership and storage] | C16: Replace before publishing.
+A17: H2 / section 2 | B17: How Silver savings work
+A18: Website copy | B18: Choose an amount, review the current Silver price and applicable taxes or charges, and confirm. The final quantity is added to your holdings after successful payment.
+A19: Required input / validation | B19: [PLACEHOLDER: settlement and payment rules] | C19: Replace before publishing.
+A20: H2 / section 3 | B20: Save once or regularly
+A21: Website copy | B21: Make a one-time purchase or set up [PLACEHOLDER: available frequencies] recurring Silver purchases. Clearly explain minimum amount, debit timing, price determination, retries and cancellation controls.
+A22: Required input / validation | B22: [PLACEHOLDER: minimum, frequencies and rules] | C22: Replace before publishing.
+A23: H2 / section 4 | B23: Sell and redeem Silver
+A24: Website copy | B24: Explain the supported options for selling, physical delivery or partner-based redemption, including applicable minimums, charges, timelines and serviceable locations.
+A25: Required input / validation | B25: [PLACEHOLDER: supported Silver routes] | C25: Replace before publishing.
+A27: FAQ COPY FOR WEBSITE
+A28: FAQ 1 question | B28: What purity of Silver is available?
+A29: FAQ 1 answer | B29: Silver purchased through Dhanvoraa is [PLACEHOLDER: purity] and supplied by [PLACEHOLDER: provider]. | C29: Visible answer must match any FAQ markup.
+A30: FAQ 2 question | B30: Where is my Silver stored?
+A31: FAQ 2 answer | B31: Your Silver is stored or held under [PLACEHOLDER: verified custody arrangement]. | C31: Visible answer must match any FAQ markup.
+A32: FAQ 3 question | B32: Can I save in Silver regularly?
+A33: FAQ 3 answer | B33: You can set up [PLACEHOLDER: supported frequencies] Silver purchases, subject to the payment and cancellation rules shown during setup. | C33: Visible answer must match any FAQ markup.
+A34: FAQ 4 question | B34: Can I redeem Silver physically?
+A35: FAQ 4 answer | B35: Physical delivery or redemption is available only where supported by [PLACEHOLDER: provider or partner]. Minimum quantities, charges, timelines and coverage apply. | C35: Visible answer must match any FAQ markup.
+A37: SCHEMA COPY
+A38: Recommended schema | B38: WebPage + BreadcrumbList; Product/Offer only with accurate visible data
+A39: JSON-LD code | B39: {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "[PLACEHOLDER: production domain]/silver/#webpage",
+      "url": "[PLACEHOLDER: production domain]/silver/",
+      "name": "Digital Silver Savings Online | Dhanvoraa",
+      "description": "Start digital Silver savings with flexible amounts, track holdings and build towards gifting or ownership goals.",
+      "isPartOf": {
+        "@id": "[PLACEHOLDER: production domain]/#website"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "[PLACEHOLDER: production domain]/silver/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "[PLACEHOLDER: production domain]/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Silver",
+          "item": "[PLACEHOLDER: production domain]/silver/"
+        }
+      ]
+    }
+  ]
+} | C39: Replace every placeholder and ensure properties match visible content.
+A40: Conditional Product / Offer JSON-LD | B40: {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": "[PLACEHOLDER: production domain]/silver/#product",
+  "name": "[PLACEHOLDER: Digital Gold or Digital Silver product name]",
+  "description": "[PLACEHOLDER: visible product description]",
+  "image": [
+    "[PLACEHOLDER: product image URL]"
+  ],
+  "brand": {
+    "@type": "Brand",
+    "name": "Dhanvoraa"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "[PLACEHOLDER: production domain]/silver/",
+    "priceCurrency": "INR",
+    "price": "[PLACEHOLDER: current visible price]",
+    "availability": "https://schema.org/[PLACEHOLDER: InStock or OutOfStock]",
+    "priceValidUntil": "[PLACEHOLDER: YYYY-MM-DD if applicable]"
+  }
+} | C40: Use only when price and availability are visible, accurate and current.
+A41: FAQ schema guidance | B41: FAQ questions and answers must be visible on the page and identical to the marked-up copy. Treat FAQPage as semantic markup, not a guaranteed rich-result feature.
+A43: IMPLEMENTATION NOTES
+A44: Internal links | B44: Link contextually to the relevant Gold, Silver, Buy, Goals, Learn, pricing, charges and terms pages.
+A45: Rendered HTML | B45: Ensure metadata, H1, copy, links, canonical and JSON-LD are present in rendered HTML.
+A46: Source | B46: Google structured data guidelines: https://developers.google.com/search/docs/appearance/structured-data/sd-policies
+
+SHEET: Buy
+A1: Buy - Website-Ready SEO Copy
+A3: SEO SETUP
+A4: Recommended URL | B4: /buy-gold-silver/
+A5: Primary keyword | B5: buy digital gold
+A6: Secondary keywords | B6: buy digital silver; buy digital gold online; digital gold purchase
+A7: Title tag | B7: Buy Digital Gold & Silver Online | Dhanvoraa
+A8: Meta description | B8: Buy digital Gold or Silver once or set up regular savings, subject to applicable provider terms and charges.
+A9: H1 | B9: Buy Gold or Silver Online
+A10: Canonical | B10: [PLACEHOLDER: production domain]/buy-gold-silver/
+A11: Open Graph image | B11: [PLACEHOLDER: 1200x630 page image URL] | C11: Replace before launch.
+A13: WEBSITE CONTENT COPY
+A14: H2 / section 1 | B14: Choose Gold or Silver
+A15: Website copy | B15: Select the metal you want to build. Show the current Gold and Silver buy price, unit, currency and exact last-updated time before the user enters an amount.
+A16: Required input / validation | B16: [PLACEHOLDER: metals and price feeds live at launch] | C16: Replace before publishing.
+A17: H2 / section 2 | B17: Enter an amount and frequency
+A18: Website copy | B18: Enter the amount you want to purchase. Choose a one-time purchase or [PLACEHOLDER: supported recurring frequencies]. Display minimum and maximum limits before users continue.
+A19: Required input / validation | B19: [PLACEHOLDER: limits and frequencies] | C19: Replace before publishing.
+A20: H2 / section 3 | B20: Review your purchase
+A21: Website copy | B21: Before confirmation, show selected metal, amount, price timestamp, applicable taxes and charges, final quantity, payment method and recurring frequency. Do not hide material charges behind a secondary link.
+A22: Required input / validation | B22: [PLACEHOLDER: calculation and charge rules] | C22: Replace before publishing.
+A23: H2 / section 4 | B23: Confirm and track
+A24: Website copy | B24: Require users to accept the current provider terms. After successful payment, show the quantity purchased and make it available in holdings according to [PLACEHOLDER: settlement timing].
+A25: Required input / validation | B25: [PLACEHOLDER: consent, settlement, refund and cancellation wording] | C25: Replace before publishing.
+A27: FAQ COPY FOR WEBSITE
+A28: FAQ 1 question | B28: What is the minimum purchase amount?
+A29: FAQ 1 answer | B29: The minimum is [PLACEHOLDER: Gold minimum] for Gold and [PLACEHOLDER: Silver minimum] for Silver. | C29: Visible answer must match any FAQ markup.
+A30: FAQ 2 question | B30: What charges apply?
+A31: FAQ 2 answer | B31: Before confirmation, Dhanvoraa displays [PLACEHOLDER: GST], [PLACEHOLDER: provider/platform fee], and any applicable payment, delivery or redemption charge. | C31: Visible answer must match any FAQ markup.
+A32: FAQ 3 question | B32: Can I cancel a one-time purchase?
+A33: FAQ 3 answer | B33: A confirmed one-time purchase can be cancelled or refunded only according to [PLACEHOLDER: provider and payment terms]. | C33: Visible answer must match any FAQ markup.
+A34: FAQ 4 question | B34: Can I pause recurring savings?
+A35: FAQ 4 answer | B35: Recurring instructions can be paused or cancelled through [PLACEHOLDER: account flow], subject to [PLACEHOLDER: effective timing]. | C35: Visible answer must match any FAQ markup.
+A37: SCHEMA COPY
+A38: Recommended schema | B38: WebPage + BreadcrumbList; separate Product/Offer nodes only if current visible prices exist
+A39: JSON-LD code | B39: {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "[PLACEHOLDER: production domain]/buy-gold-silver/#webpage",
+      "url": "[PLACEHOLDER: production domain]/buy-gold-silver/",
+      "name": "Buy Digital Gold & Silver Online | Dhanvoraa",
+      "description": "Buy digital Gold or Silver once or set up regular savings, subject to applicable provider terms and charges.",
+      "isPartOf": {
+        "@id": "[PLACEHOLDER: production domain]/#website"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "[PLACEHOLDER: production domain]/buy-gold-silver/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "[PLACEHOLDER: production domain]/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Buy",
+          "item": "[PLACEHOLDER: production domain]/buy-gold-silver/"
+        }
+      ]
+    }
+  ]
+} | C39: Replace every placeholder and ensure properties match visible content.
+A40: Conditional Product / Offer JSON-LD | B40: {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": "[PLACEHOLDER: production domain]/buy-gold-silver/#product",
+  "name": "[PLACEHOLDER: Digital Gold or Digital Silver product name]",
+  "description": "[PLACEHOLDER: visible product description]",
+  "image": [
+    "[PLACEHOLDER: product image URL]"
+  ],
+  "brand": {
+    "@type": "Brand",
+    "name": "Dhanvoraa"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "[PLACEHOLDER: production domain]/buy-gold-silver/",
+    "priceCurrency": "INR",
+    "price": "[PLACEHOLDER: current visible price]",
+    "availability": "https://schema.org/[PLACEHOLDER: InStock or OutOfStock]",
+    "priceValidUntil": "[PLACEHOLDER: YYYY-MM-DD if applicable]"
+  }
+} | C40: Use only when price and availability are visible, accurate and current.
+A41: FAQ schema guidance | B41: FAQ questions and answers must be visible on the page and identical to the marked-up copy. Treat FAQPage as semantic markup, not a guaranteed rich-result feature.
+A43: IMPLEMENTATION NOTES
+A44: Internal links | B44: Link contextually to the relevant Gold, Silver, Buy, Goals, Learn, pricing, charges and terms pages.
+A45: Rendered HTML | B45: Ensure metadata, H1, copy, links, canonical and JSON-LD are present in rendered HTML.
+A46: Source | B46: Google structured data guidelines: https://developers.google.com/search/docs/appearance/structured-data/sd-policies
+
+SHEET: Goals
+A1: Goals - Website-Ready SEO Copy
+A3: SEO SETUP
+A4: Recommended URL | B4: /goal-based-savings/
+A5: Primary keyword | B5: goal based savings
+A6: Secondary keywords | B6: gold savings for wedding; save gold for jewellery; gold savings for future
+A7: Title tag | B7: Goal-Based Gold & Silver Savings | Dhanvoraa
+A8: Meta description | B8: Create a Gold or Silver savings goal for weddings, jewellery, education, gifting and other milestones.
+A9: H1 | B9: Build Gold & Silver Around Your Goals
+A10: Canonical | B10: [PLACEHOLDER: production domain]/goal-based-savings/
+A11: Open Graph image | B11: [PLACEHOLDER: 1200x630 page image URL] | C11: Replace before launch.
+A13: WEBSITE CONTENT COPY
+A14: H2 / section 1 | B14: Choose a goal
+A15: Website copy | B15: Start with a wedding, jewellery, education, home, gifting or another personal milestone. A goal organises your saving journey but does not guarantee a future quantity or value.
+A16: Required input / validation | B16: [PLACEHOLDER: supported goal types] | C16: Replace before publishing.
+A17: H2 / section 2 | B17: Set up the goal
+A18: Website copy | B18: Give your goal a name, choose Gold or Silver, enter a target value or quantity, add a target date where available, and select how much and how often you want to save.
+A19: Required input / validation | B19: [PLACEHOLDER: exact goal fields] | C19: Replace before publishing.
+A20: H2 / section 3 | B20: Track progress
+A21: Website copy | B21: Show the quantity accumulated, current value, target and progress percentage. Explain that the current value changes with Gold or Silver prices and may not match the target value on the target date.
+A22: Required input / validation | B22: [PLACEHOLDER: progress calculation] | C22: Replace before publishing.
+A23: H2 / section 4 | B23: Wedding and jewellery goals
+A24: Website copy | B24: Help users plan gradual Gold accumulation for a wedding or future jewellery need. Do not imply that the platform guarantees a jewellery price, making charge or final purchase value.
+A25: Required input / validation | B25: [PLACEHOLDER: jewellery partner or redemption journey] | C25: Replace before publishing.
+A27: FAQ COPY FOR WEBSITE
+A28: FAQ 1 question | B28: Does creating a goal guarantee I will reach the target?
+A29: FAQ 1 answer | B29: No. A goal helps you plan and track accumulation. Gold and Silver prices can change, so the future quantity or value is not guaranteed. | C29: Visible answer must match any FAQ markup.
+A30: FAQ 2 question | B30: Can I create a custom goal?
+A31: FAQ 2 answer | B31: You can create [PLACEHOLDER: predefined and/or custom goal functionality]. | C31: Visible answer must match any FAQ markup.
+A32: FAQ 3 question | B32: Can one goal include both Gold and Silver?
+A33: FAQ 3 answer | B33: A goal can include [PLACEHOLDER: one selected metal or both metals], depending on the available product setup. | C33: Visible answer must match any FAQ markup.
+A34: FAQ 4 question | B34: What happens if I miss a recurring payment?
+A35: FAQ 4 answer | B35: A missed payment is handled according to [PLACEHOLDER: retry and notification rules]. It should not attract an unsupported penalty unless explicitly stated in the applicable terms. | C35: Visible answer must match any FAQ markup.
+A37: SCHEMA COPY
+A38: Recommended schema | B38: CollectionPage + BreadcrumbList
+A39: JSON-LD code | B39: {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "[PLACEHOLDER: production domain]/goal-based-savings/#webpage",
+      "url": "[PLACEHOLDER: production domain]/goal-based-savings/",
+      "name": "Goal-Based Gold & Silver Savings | Dhanvoraa",
+      "description": "Create a Gold or Silver savings goal for weddings, jewellery, education, gifting and other milestones.",
+      "isPartOf": {
+        "@id": "[PLACEHOLDER: production domain]/#website"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "[PLACEHOLDER: production domain]/goal-based-savings/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "[PLACEHOLDER: production domain]/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Goals",
+          "item": "[PLACEHOLDER: production domain]/goal-based-savings/"
+        }
+      ]
+    }
+  ]
+} | C39: Replace every placeholder and ensure properties match visible content.
+A40: FAQ schema guidance | B40: FAQ questions and answers must be visible on the page and identical to the marked-up copy. Treat FAQPage as semantic markup, not a guaranteed rich-result feature.
+A42: IMPLEMENTATION NOTES
+A43: Internal links | B43: Link contextually to the relevant Gold, Silver, Buy, Goals, Learn, pricing, charges and terms pages.
+A44: Rendered HTML | B44: Ensure metadata, H1, copy, links, canonical and JSON-LD are present in rendered HTML.
+A45: Source | B45: Google structured data guidelines: https://developers.google.com/search/docs/appearance/structured-data/sd-policies
+
+SHEET: Gold Price
+A1: Gold Price - Website-Ready SEO Copy
+A3: SEO SETUP
+A4: Recommended URL | B4: /gold-price/
+A5: Primary keyword | B5: digital gold price
+A6: Secondary keywords | B6: digital gold price today; digital gold rate today; 1 gram digital gold price
+A7: Title tag | B7: Digital Gold Price Today | Gold Rate | Dhanvoraa
+A8: Meta description | B8: Check the latest digital Gold price and understand how quantity, taxes and charges are calculated before you buy.
+A9: H1 | B9: Digital Gold Price Today
+A10: Canonical | B10: [PLACEHOLDER: production domain]/gold-price/
+A11: Open Graph image | B11: [PLACEHOLDER: 1200x630 page image URL] | C11: Replace before launch.
+A13: WEBSITE CONTENT COPY
+A14: H2 / section 1 | B14: Current Gold price
+A15: Website copy | B15: Display the current Digital Gold buy price and sell price separately in INR per gram, with the exact date, time and timezone of the most recent update.
+A16: Required input / validation | B16: [PLACEHOLDER: current feed, unit and timezone] | C16: Replace before publishing.
+A17: H2 / section 2 | B17: How purchase quantity is calculated
+A18: Website copy | B18: For an entered amount, show the current buy price, applicable GST and charges, and the final Gold quantity before confirmation. Any examples must use the same current feed.
+A19: Required input / validation | B19: [PLACEHOLDER: calculation formula and fees treatment] | C19: Replace before publishing.
+A20: H2 / section 3 | B20: How the price is determined
+A21: Website copy | B21: The Digital Gold price is provided by [PLACEHOLDER: source/provider] and refreshed [PLACEHOLDER: frequency]. Explain the price-validity window, buy-sell difference and stale-price handling.
+A22: Required input / validation | B22: [PLACEHOLDER: full pricing methodology] | C22: Replace before publishing.
+A23: H2 / section 4 | B23: Feed unavailable state
+A24: Website copy | B24: If current price data is unavailable or older than [PLACEHOLDER: stale threshold], do not display it as live and do not output price or Offer structured data.
+A25: Required input / validation | B25: [PLACEHOLDER: fallback behaviour] | C25: Replace before publishing.
+A27: FAQ COPY FOR WEBSITE
+A28: FAQ 1 question | B28: How often is the Digital Gold price updated?
+A29: FAQ 1 answer | B29: The displayed price is refreshed [PLACEHOLDER: frequency] using data from [PLACEHOLDER: provider/source]. | C29: Visible answer must match any FAQ markup.
+A30: FAQ 2 question | B30: Why are the buy and sell prices different?
+A31: FAQ 2 answer | B31: The difference may reflect [PLACEHOLDER: provider spread, taxes and applicable charges]. | C31: Visible answer must match any FAQ markup.
+A32: FAQ 3 question | B32: Does the displayed price include GST and charges?
+A33: FAQ 3 answer | B33: The page should clearly state whether the displayed rate includes or excludes [PLACEHOLDER: GST and charges]. | C33: Visible answer must match any FAQ markup.
+A34: FAQ 4 question | B34: How much Gold will I receive for ₹100?
+A35: FAQ 4 answer | B35: The quantity depends on the current buy price and applicable taxes or charges. Use the on-page calculator for the current quantity before confirming. | C35: Visible answer must match any FAQ markup.
+A37: SCHEMA COPY
+A38: Recommended schema | B38: WebPage + BreadcrumbList; Offer only when visible price is current and identical
+A39: JSON-LD code | B39: {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "[PLACEHOLDER: production domain]/gold-price/#webpage",
+      "url": "[PLACEHOLDER: production domain]/gold-price/",
+      "name": "Digital Gold Price Today | Gold Rate | Dhanvoraa",
+      "description": "Check the latest digital Gold price and understand how quantity, taxes and charges are calculated before you buy.",
+      "isPartOf": {
+        "@id": "[PLACEHOLDER: production domain]/#website"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "[PLACEHOLDER: production domain]/gold-price/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "[PLACEHOLDER: production domain]/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Gold Price",
+          "item": "[PLACEHOLDER: production domain]/gold-price/"
+        }
+      ]
+    }
+  ]
+} | C39: Replace every placeholder and ensure properties match visible content.
+A40: Conditional Product / Offer JSON-LD | B40: {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": "[PLACEHOLDER: production domain]/gold-price/#product",
+  "name": "[PLACEHOLDER: Digital Gold or Digital Silver product name]",
+  "description": "[PLACEHOLDER: visible product description]",
+  "image": [
+    "[PLACEHOLDER: product image URL]"
+  ],
+  "brand": {
+    "@type": "Brand",
+    "name": "Dhanvoraa"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "[PLACEHOLDER: production domain]/gold-price/",
+    "priceCurrency": "INR",
+    "price": "[PLACEHOLDER: current visible price]",
+    "availability": "https://schema.org/[PLACEHOLDER: InStock or OutOfStock]",
+    "priceValidUntil": "[PLACEHOLDER: YYYY-MM-DD if applicable]"
+  }
+} | C40: Use only when price and availability are visible, accurate and current.
+A41: FAQ schema guidance | B41: FAQ questions and answers must be visible on the page and identical to the marked-up copy. Treat FAQPage as semantic markup, not a guaranteed rich-result feature.
+A43: IMPLEMENTATION NOTES
+A44: Internal links | B44: Link contextually to the relevant Gold, Silver, Buy, Goals, Learn, pricing, charges and terms pages.
+A45: Rendered HTML | B45: Ensure metadata, H1, copy, links, canonical and JSON-LD are present in rendered HTML.
+A46: Source | B46: Google structured data guidelines: https://developers.google.com/search/docs/appearance/structured-data/sd-policies
+
+SHEET: Learn Hub
+A1: Learn Hub - Website-Ready SEO Copy
+A3: SEO SETUP
+A4: Recommended URL | B4: /learn/
+A5: Primary keyword | B5: what is digital gold
+A6: Secondary keywords | B6: how digital gold works; digital gold vs physical gold; digital gold redemption
+A7: Title tag | B7: Learn About Digital Gold & Silver | Dhanvoraa
+A8: Meta description | B8: Understand digital Gold and Silver, recurring savings, prices, charges, selling and redemption through simple guides.
+A9: H1 | B9: Learn About Digital Gold & Silver
+A10: Canonical | B10: [PLACEHOLDER: production domain]/learn/
+A11: Open Graph image | B11: [PLACEHOLDER: 1200x630 page image URL] | C11: Replace before launch.
+A13: WEBSITE CONTENT COPY
+A14: H2 / section 1 | B14: Introduction
+A15: Website copy | B15: Explore simple guides covering Digital Gold, Digital Silver, regular savings, pricing, taxes, charges, selling, redemption and product comparisons.
+A16: Required input / validation | B16: [PLACEHOLDER: final content roadmap] | C16: Replace before publishing.
+A17: H2 / section 2 | B17: Digital Gold and Silver basics
+A18: Website copy | B18: Publish guides that explain how online Gold and Silver purchases work, how quantity is calculated, where holdings are stored and what selling or redemption options are available.
+A19: Required input / validation | B19: [PLACEHOLDER: provider-approved educational facts] | C19: Replace before publishing.
+A20: H2 / section 3 | B20: Comparisons
+A21: Website copy | B21: Compare Digital Gold with physical Gold, Gold ETFs, jewellery schemes and other relevant options neutrally. Explain structure, access, storage, charges, regulation and use cases without declaring a universal winner.
+A22: Required input / validation | B22: [PLACEHOLDER: legal and compliance review] | C22: Replace before publishing.
+A23: H2 / section 4 | B23: Editorial standards
+A24: Website copy | B24: Each guide should show a named author or reviewer, publication date, modified date, sources, and clear disclosures. Answer the main question early and keep commercial links contextual.
+A25: Required input / validation | B25: [PLACEHOLDER: author/reviewer and update process] | C25: Replace before publishing.
+A27: FAQ COPY FOR WEBSITE
+A28: FAQ 1 question | B28: What topics are covered in the Learn hub?
+A29: FAQ 1 answer | B29: The Learn hub covers Digital Gold and Silver basics, regular savings, pricing, taxes, charges, selling, redemption and comparisons. | C29: Visible answer must match any FAQ markup.
+A30: FAQ 2 question | B30: Are the guides financial advice?
+A31: FAQ 2 answer | B31: No. The guides provide general educational and product information and should not be treated as personalised financial advice. | C31: Visible answer must match any FAQ markup.
+A32: FAQ 3 question | B32: How often are guides reviewed?
+A33: FAQ 3 answer | B33: Guides are reviewed [PLACEHOLDER: review frequency] by [PLACEHOLDER: named reviewer role]. | C33: Visible answer must match any FAQ markup.
+A35: SCHEMA COPY
+A36: Recommended schema | B36: CollectionPage + BreadcrumbList; Article + BreadcrumbList on individual guides
+A37: JSON-LD code | B37: {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "[PLACEHOLDER: production domain]/learn/#webpage",
+      "url": "[PLACEHOLDER: production domain]/learn/",
+      "name": "Learn About Digital Gold & Silver | Dhanvoraa",
+      "description": "Understand digital Gold and Silver, recurring savings, prices, charges, selling and redemption through simple guides.",
+      "isPartOf": {
+        "@id": "[PLACEHOLDER: production domain]/#website"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "[PLACEHOLDER: production domain]/learn/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "[PLACEHOLDER: production domain]/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Learn Hub",
+          "item": "[PLACEHOLDER: production domain]/learn/"
+        }
+      ]
+    }
+  ]
+} | C37: Replace every placeholder and ensure properties match visible content.
+A38: FAQ schema guidance | B38: FAQ questions and answers must be visible on the page and identical to the marked-up copy. Treat FAQPage as semantic markup, not a guaranteed rich-result feature.
+A40: IMPLEMENTATION NOTES
+A41: Internal links | B41: Link contextually to the relevant Gold, Silver, Buy, Goals, Learn, pricing, charges and terms pages.
+A42: Rendered HTML | B42: Ensure metadata, H1, copy, links, canonical and JSON-LD are present in rendered HTML.
+A43: Source | B43: Google structured data guidelines: https://developers.google.com/search/docs/appearance/structured-data/sd-policies
+
+SHEET: Silver Price
+A1: Silver Price - Website-Ready SEO Copy
+A3: SEO SETUP
+A4: Recommended URL | B4: /silver-price/
+A5: Primary keyword | B5: digital silver price
+A6: Secondary keywords | B6: digital silver price today; digital silver rate today; silver price per gram; 1 gram digital silver price
+A7: Title tag | B7: Digital Silver Price Today | Silver Rate | Dhanvoraa
+A8: Meta description | B8: Check the latest digital Silver price and understand how quantity, taxes and applicable charges are calculated before you buy.
+A9: H1 | B9: Digital Silver Price Today
+A10: Canonical | B10: [PLACEHOLDER: production domain]/silver-price/
+A11: Open Graph image | B11: [PLACEHOLDER: 1200x630 page image URL] | C11: Replace before launch.
+A13: WEBSITE CONTENT COPY
+A14: H2 / section 1 | B14: Current Silver price
+A15: Website copy | B15: Display the current Digital Silver buy price and sell price separately in INR per gram, with the exact date, time and timezone of the most recent update.
+A16: Required input / validation | B16: [PLACEHOLDER: current feed, unit and timezone] | C16: Replace before publishing.
+A17: H2 / section 2 | B17: How purchase quantity is calculated
+A18: Website copy | B18: For an entered amount, show the current buy price, applicable GST and charges, and the final Silver quantity before confirmation. Any examples must use the same current feed.
+A19: Required input / validation | B19: [PLACEHOLDER: calculation formula and fees treatment] | C19: Replace before publishing.
+A20: H2 / section 3 | B20: How the price is determined
+A21: Website copy | B21: The Digital Silver price is provided by [PLACEHOLDER: source/provider] and refreshed [PLACEHOLDER: frequency]. Explain the price-validity window, buy-sell difference and stale-price handling.
+A22: Required input / validation | B22: [PLACEHOLDER: full pricing methodology] | C22: Replace before publishing.
+A23: H2 / section 4 | B23: Feed unavailable state
+A24: Website copy | B24: If current price data is unavailable or older than [PLACEHOLDER: stale threshold], do not display it as live and do not output price or Offer structured data.
+A25: Required input / validation | B25: [PLACEHOLDER: fallback behaviour] | C25: Replace before publishing.
+A27: FAQ COPY FOR WEBSITE
+A28: FAQ 1 question | B28: How often is the Digital Silver price updated?
+A29: FAQ 1 answer | B29: The displayed price is refreshed [PLACEHOLDER: frequency] using data from [PLACEHOLDER: provider/source]. | C29: Visible answer must match any FAQ markup.
+A30: FAQ 2 question | B30: Why are the buy and sell prices different?
+A31: FAQ 2 answer | B31: The difference may reflect [PLACEHOLDER: provider spread, taxes and applicable charges]. | C31: Visible answer must match any FAQ markup.
+A32: FAQ 3 question | B32: Does the displayed price include GST and charges?
+A33: FAQ 3 answer | B33: The page should clearly state whether the displayed rate includes or excludes [PLACEHOLDER: GST and charges]. | C33: Visible answer must match any FAQ markup.
+A34: FAQ 4 question | B34: How much Silver will I receive for ₹100?
+A35: FAQ 4 answer | B35: The quantity depends on the current buy price and applicable taxes or charges. Use the on-page calculator for the current quantity before confirming. | C35: Visible answer must match any FAQ markup.
+A37: SCHEMA COPY
+A38: Recommended schema | B38: WebPage + BreadcrumbList; Offer only when visible price is current and identical
+A39: JSON-LD code | B39: {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "[PLACEHOLDER: production domain]/silver-price/#webpage",
+      "url": "[PLACEHOLDER: production domain]/silver-price/",
+      "name": "Digital Silver Price Today | Silver Rate | Dhanvoraa",
+      "description": "Check the latest digital Silver price and understand how quantity, taxes and charges are calculated before you buy.",
+      "isPartOf": {
+        "@id": "[PLACEHOLDER: production domain]/#website"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "[PLACEHOLDER: production domain]/silver-price/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "[PLACEHOLDER: production domain]/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Silver Price",
+          "item": "[PLACEHOLDER: production domain]/silver-price/"
+        }
+      ]
+    }
+  ]
+} | C39: Replace every placeholder and ensure properties match visible content.
+A40: Conditional Product / Offer JSON-LD | B40: {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": "[PLACEHOLDER: production domain]/silver-price/#product",
+  "name": "[PLACEHOLDER: Digital Silver or Digital Silver product name]",
+  "description": "[PLACEHOLDER: visible product description]",
+  "image": [
+    "[PLACEHOLDER: product image URL]"
+  ],
+  "brand": {
+    "@type": "Brand",
+    "name": "Dhanvoraa"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "[PLACEHOLDER: production domain]/silver-price/",
+    "priceCurrency": "INR",
+    "price": "[PLACEHOLDER: current visible price]",
+    "availability": "https://schema.org/[PLACEHOLDER: InStock or OutOfStock]",
+    "priceValidUntil": "[PLACEHOLDER: YYYY-MM-DD if applicable]"
+  }
+} | C40: Use only when price and availability are visible, accurate and current.
+A41: FAQ schema guidance | B41: FAQ questions and answers must be visible on the page and identical to the marked-up copy. Treat FAQPage as semantic markup, not a guaranteed rich-result feature.
+A43: IMPLEMENTATION NOTES
+A44: Internal links | B44: Link contextually to the relevant Silver, Silver, Buy, Goals, Learn, pricing, charges and terms pages.
+A45: Rendered HTML | B45: Ensure metadata, H1, copy, links, canonical and JSON-LD are present in rendered HTML.
+A46: Source | B46: Google structured data guidelines: https://developers.google.com/search/docs/appearance/structured-data/sd-policies
+
+SHEET: Robots & Sitemap
+A1: Robots.txt & Sitemap.xml: Copy-Ready Files
+A3: FILE 1: robots.txt
+A4: File location | B4: [PLACEHOLDER: production domain]/robots.txt | C4: Replace the domain, then upload as a UTF-8 plain-text file at the website root.
+A5: Exact content to publish | B5: User-agent: *
+Allow: /
+
+Sitemap: [PLACEHOLDER: production domain]/sitemap.xml | C5: This version safely allows the public website to be crawled and declares the sitemap. Add Disallow rules only after the actual private routes are confirmed.
+A7: FILE 2: sitemap.xml
+A8: File location | B8: [PLACEHOLDER: production domain]/sitemap.xml | C8: Replace the domain, then upload as valid UTF-8 XML.
+A9: Exact content to publish | B9: <?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>[PLACEHOLDER: production domain]/</loc>
+  </url>
+  <url>
+    <loc>[PLACEHOLDER: production domain]/about-us/</loc>
+  </url>
+  <url>
+    <loc>[PLACEHOLDER: production domain]/gold/</loc>
+  </url>
+  <url>
+    <loc>[PLACEHOLDER: production domain]/silver/</loc>
+  </url>
+  <url>
+    <loc>[PLACEHOLDER: production domain]/buy-gold-silver/</loc>
+  </url>
+  <url>
+    <loc>[PLACEHOLDER: production domain]/goal-based-savings/</loc>
+  </url>
+  <url>
+    <loc>[PLACEHOLDER: production domain]/gold-price/</loc>
+  </url>
+  <url>
+    <loc>[PLACEHOLDER: production domain]/learn/</loc>
+  </url>
+</urlset> | C9: This includes the nine canonical pages, including the Silver Price page recommended in the workbook. Remove any URL that is not live, indexable, canonical and returning HTTP 200 at launch.
+A11: Do not include in sitemap | B11: Login, registration, account, OTP, checkout, payment, transaction confirmation, personalised URLs, API routes, internal search, parameters, redirects, 404s, noindex pages, noncanonical duplicates and staging URLs. | C11: These are application or duplicate states rather than canonical public landing pages.
+A12: Add later when published | B12: Published Learn articles, goal-detail pages, help/pricing pages and legal pages. | C12: Only add pages that are canonical, indexable, internally linked and return HTTP 200.
+A13: lastmod | B13: Add <lastmod>YYYY-MM-DD</lastmod> only when your CMS can supply an accurate material-update date. | C13: The launch copy intentionally omits lastmod because actual publication/update dates were not provided.
+A14: Important developer note | B14: Do not add guessed Disallow paths to robots.txt. Protect account and transaction data with authentication, and use noindex for accessible utility pages that should not appear in search. | C14: robots.txt manages crawling; it is not a reliable security or de-indexing mechanism.
+A15: Google robots.txt guidance | B15: https://developers.google.com/crawling/docs/robots-txt/create-robots-txt | C15: Official source.
+A16: Google sitemap guidance | B16: https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap | C16: Official source.

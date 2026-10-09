@@ -1,0 +1,2 @@
+const urls=['https://api.oropocket.com/public/prices','https://api.gold-api.com/price/XAU','https://api.gold-api.com/price/XAG'];
+Promise.all(urls.map(async url=>{try{const r=await fetch(url,{signal:AbortSignal.timeout(10000)});console.log(JSON.stringify({url,status:r.status,headers:{cors:r.headers.get('access-control-allow-origin'),cache:r.headers.get('cache-control')},body:(await r.text()).slice(0,2200)}));}catch(e){console.log(JSON.stringify({url,error:e.message}));}}));

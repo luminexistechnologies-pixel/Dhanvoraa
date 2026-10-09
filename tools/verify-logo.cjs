@@ -1,0 +1,9 @@
+const {chromium}=require('playwright');const assert=require('node:assert/strict');
+(async()=>{const b=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});try{
+ const page=await b.newPage();await page.goto('http://127.0.0.1:4173/');
+ const pixels=await page.evaluate(async()=>{const img=document.querySelector('.nav-brand img');await img.decode();const canvas=document.createElement('canvas');canvas.width=img.naturalWidth;canvas.height=img.naturalHeight;const ctx=canvas.getContext('2d');ctx.drawImage(img,0,0);const d=ctx.getImageData(0,0,canvas.width,canvas.height).data;let transparent=0,opaque=0;for(let i=3;i<d.length;i+=4){if(d[i]===0)transparent++;if(d[i]>=250)opaque++;}return{width:canvas.width,height:canvas.height,corners:[d[3],d[(canvas.width-1)*4+3],d[(canvas.width*(canvas.height-1))*4+3],d[d.length-1]],transparent,opaque,blend:getComputedStyle(img).mixBlendMode,mask:getComputedStyle(img).maskImage};});
+ assert.deepEqual(pixels.corners,[0,0,0,0]);assert.ok(pixels.transparent/(pixels.width*pixels.height)>.5);assert.ok(pixels.opaque>1000);assert.equal(pixels.blend,'normal');assert.equal(pixels.mask,'none');
+ for(const width of[320,390,768,1440]){await page.setViewportSize({width,height:900});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);const bounds=await page.locator('.nav-brand').boundingBox();const header=await page.locator('header').boundingBox();assert.ok(bounds.y>=header.y&&bounds.y+bounds.height<=header.y+header.height);}
+ const r=await page.request.get('http://127.0.0.1:4173/assets/wordmark-transparent.png');assert.equal(r.headers()['content-type'],'image/png');
+ console.log('PASS: Actual PNG alpha transparency, transparent corners, full logo content, natural rendering without masks, correct PNG MIME, and navbar alignment at 320/390/768/1440px.');
+}finally{await b.close();}})().catch(e=>{console.error(e);process.exitCode=1;});
